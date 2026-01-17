@@ -26,6 +26,8 @@ alias gba='git branch --all'
 alias gbv='git branch -vv'
 alias gsl='git stash list --date local'
 alias ggs='gogitstatus'
+alias gt='git stash'
+alias gtp='git stash pop'
 
 alias d='docker'
 alias dp='docker ps'
