@@ -1,10 +1,10 @@
 type gls &> /dev/null && alias ls='gls --color=auto'
 
-type nvim &> /dev/null && alias v='nvim'
-type nvim &> /dev/null && alias vi='nvim'
-type nvim &> /dev/null && alias vim='nvim'
+type nvim &> /dev/null && alias v=nvim
+type nvim &> /dev/null && alias vi=nvim
+type nvim &> /dev/null && alias vim=nvim
 
-alias g='git'
+alias g=git
 alias gl='git pull'
 alias gp='git push'
 alias gm='git merge'
@@ -14,7 +14,6 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gd='git diff'
 alias gdc='git diff --cached'
-alias gc='git commit'
 alias gcam='git commit --all --message'
 alias gco='git checkout'
 alias gct='git checkout --track'
@@ -23,74 +22,17 @@ alias grv='git remote --verbose'
 alias gb='git branch'
 alias gbd='git branch --delete'
 alias gba='git branch --all'
-alias gbv='git branch -vv'
-alias gsl='git stash list --date local'
-alias ggs='gogitstatus'
-alias gt='git stash'
-alias gtp='git stash pop'
 
-alias d='docker'
-alias dp='docker ps'
-alias dpa='docker ps --all'
-alias dil='docker image ls'
-alias dsp='docker system prune --volumes'
-
-alias dku="${HOME}/src/virtualization-tools/bin/kubernetes/set-cluster.sh"
-alias dkc="${HOME}/src/virtualization-tools/bin/kubernetes/set-context.sh"
-alias dkn="${HOME}/src/virtualization-tools/bin/kubernetes/set-namespace.sh"
-alias dkr="${HOME}/src/virtualization-tools/bin/kubernetes/show-resources.sh"
-alias dkp="${HOME}/src/virtualization-tools/bin/kubernetes/show-pods.sh"
-alias dkd="${HOME}/src/virtualization-tools/bin/kubernetes/show-deployments.sh"
-alias dkdl="${HOME}/src/virtualization-tools/bin/kubernetes/show-deployment-logs.sh"
-alias dks="${HOME}/src/virtualization-tools/bin/kubernetes/shell.sh"
-alias dkz="${HOME}/src/virtualization-tools/bin/kubernetes/kustomize.sh"
-
-alias k="kubectl"
-alias dk="${HOME}/src/virtualization-tools/bin/kubernetes/kubectl.sh"
-alias dst="${HOME}/src/virtualization-tools/bin/kubernetes/kubectl/stern.sh"
-alias dcx="${HOME}/src/virtualization-tools/bin/kubernetes/kubectl/kubectx.sh"
-alias dns="${HOME}/src/virtualization-tools/bin/kubernetes/kubectl/kubens.sh"
-
-alias a="argocd"
-
-alias dam="${HOME}/src/monitoring-tools/bin/prometheus/amtool.sh"
-alias dau="${HOME}/src/monitoring-tools/bin/prometheus/amtool/set-cluster.sh"
-alias data="${HOME}/src/monitoring-tools/bin/prometheus/amtool/alert/list.sh"
-alias dats="${HOME}/src/monitoring-tools/bin/prometheus/amtool/silence/list.sh"
-
-alias glc="${HOME}/src/version-control-tools/bin/gitlab/glab/context.sh"
-alias glpc="${HOME}/src/version-control-tools/bin/gitlab/glab/push-create.sh"
-alias glpcm="${HOME}/src/version-control-tools/bin/gitlab/glab/push-create-merge.sh"
-alias glpfm="${HOME}/src/version-control-tools/bin/gitlab/glab/push-find-merge.sh"
-
-alias pps='podman ps'
-alias ppsa='podman ps -a'
-alias pil='podman image ls'
-alias pir='podman image prune'
-alias pdeb='podman run --rm -it debian:13'
-alias ppy='podman run --rm -it python:3.14-slim'
-alias pgo='podman run --rm -it golang:1.25'
+alias k=kubectl
+alias dkc="$HOME/src/virtualization-tools/bin/kubernetes/set-context.sh"
+alias dkn="$HOME/src/virtualization-tools/bin/kubernetes/set-namespace.sh"
 
 alias bubo='brew update && brew outdated'
 alias bubc='brew upgrade && brew cleanup'
-
-alias vgs='vagrant global-status'
-alias vu='vagrant up'
-alias vh='vagrant halt'
-alias vd='vagrant destroy'
-alias vs='vagrant status'
-alias vss='vagrant ssh'
-
-alias mu='make update'
-alias mul='make update-library'
-alias ml='make lint'
-alias mt='make test'
 
 alias tu='task update'
 alias tul='task update-library'
 alias tl='task lint'
 alias tt='task test'
-alias td='task deploy'
 
 alias pat='gobump patch'
-alias gom='gomonitor'
