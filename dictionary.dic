@@ -1,36 +1,20 @@
-# names
-Reitzel
-
 # alias
+dkdl
 glpc
 glpcm
 glpfm
-dkdl
-
-# language
-CTYPE
 
 # zsh
-setopt
-nobeep
-compinit
-SAVEHIST
-HISTSIZE
 DUPS
-
-# git
-excludesfile
+HISTSIZE
+SAVEHIST
+nobeep
+setopt
 
 # vim
 nvim
 
-# homebrew
-shellenv
-
 # kubernetes
-kubens
-kubectx
 krew
-
-# tools
-websocat
+kubectx
+kubens

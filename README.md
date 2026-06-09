@@ -1,3 +1,0 @@
-# DotFiles
-
-A clean start.
